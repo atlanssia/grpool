@@ -1,2 +1,2 @@
 # grpool
-a simple go routine pool
+a very simple go routine pool

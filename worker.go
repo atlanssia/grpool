@@ -32,5 +32,6 @@ func (w *worker) Start() {
 }
 
 func (w *worker) Stop() {
+	w.job.Exit()
 	close(w.closeChan)
 }

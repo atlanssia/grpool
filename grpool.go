@@ -2,6 +2,7 @@ package grpool
 
 type Pool interface {
 	Process(interface{})
+	Close()
 }
 
 type pool struct {

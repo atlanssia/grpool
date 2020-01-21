@@ -41,6 +41,10 @@ func (j *mockJob) Process(value interface{}) {
 	j.wg.Done()
 }
 
+func (j *mockJob) Exit() {
+	// nothing
+}
+
 func getGID() uint64 {
 	b := make([]byte, 64)
 	b = b[:runtime.Stack(b, false)]
